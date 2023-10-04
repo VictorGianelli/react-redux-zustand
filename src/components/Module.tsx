@@ -1,6 +1,6 @@
 import * as Collapsible from '@radix-ui/react-collapsible';
 
-import { ChevronDown, Video } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { Lesson } from "./Lesson";
 import { useAppSelector } from '../store';
 import { useDispatch } from 'react-redux';
