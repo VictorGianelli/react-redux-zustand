@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import { Header } from "../components/Header";
 import { AnimateLessonsPulse } from "../components/AnimateLessonsPulse";
 import { useCurrentLesson, useStore } from "../zustand-store";
-import { HttpProxy } from "vite";
 
 export function Player() {
     const { course, load } = useStore()
@@ -27,8 +26,8 @@ export function Player() {
     }, [currentLesson])
 
     function handleLeaveFeedback(){
-        const url = 'somesite.com?data=yourDataToSend';
-        window.open(url, 'https://github.com/VictorGianelli/react-redux-zustand');
+        const url = 'https://github.com/VictorGianelli/react-redux-zustand';
+        window.open(url, '_blank');
     }
 
     return (
